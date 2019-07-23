@@ -112,7 +112,7 @@ def avg_pool(x, ksize=2, stride=2, padding='SAME', name='avg_pool'):
 
 
 def resize(x, scale=2, to_shape=None, align_corners=True, dynamic=False,
-           func=tf.image.resize_bilinear, name='resize'):
+           func=tf.image.resize, name='resize'):
     if dynamic:
         xs = tf.cast(tf.shape(x), tf.float32)
         new_xs = [tf.cast(xs[1]*scale, tf.int32),
@@ -122,10 +122,9 @@ def resize(x, scale=2, to_shape=None, align_corners=True, dynamic=False,
         new_xs = [int(xs[1]*scale), int(xs[2]*scale)]
     with tf.variable_scope(name):
         if to_shape is None:
-            x = func(x, new_xs, align_corners=align_corners)
+            x = func(x, size=new_xs)
         else:
-            x = func(x, [to_shape[0], to_shape[1]],
-                     align_corners=align_corners)
+            x = func(x, size=[to_shape[0], to_shape[1]])
     return x
 
 
