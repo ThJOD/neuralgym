@@ -53,6 +53,13 @@ LOGGING_CONFIG = dict(
         'handlers': ['h', 'fh'],
         'level': logging.DEBUG,
         },
+    loggers={ 
+        'neuralgym': { 
+            'handlers': ['h', 'fh'],
+            'level': logging.DEBUG,
+        },
+    }
+     
 )
 
 
