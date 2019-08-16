@@ -11,7 +11,7 @@ from .dataset import Dataset
 from ..ops.image_ops import np_random_crop
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 READER_LOCK = threading.Lock()
 
 

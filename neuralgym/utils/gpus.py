@@ -4,7 +4,7 @@ import re
 import logging
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 
 
 def set_gpus(gpus):

@@ -4,7 +4,7 @@ import sys
 import time
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 
 
 color2num = dict(

@@ -10,7 +10,7 @@ __all__ = ['scalar_summary', 'filters_summary', 'images_summary',
            'gradients_summary']
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 
 
 def collection_to_dict(collection):

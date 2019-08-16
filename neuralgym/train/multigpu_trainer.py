@@ -9,7 +9,7 @@ from ..ops.train_ops import average_gradients, process_gradients
 from .trainer import Trainer
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 
 
 class MultiGPUTrainer(Trainer):

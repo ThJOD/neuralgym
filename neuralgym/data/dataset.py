@@ -4,7 +4,7 @@ import logging
 import tensorflow as tf
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 
 
 class Dataset(object):

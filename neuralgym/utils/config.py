@@ -4,7 +4,7 @@ import os
 import yaml
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 
 
 class LoaderMeta(type):

@@ -2,7 +2,7 @@ import logging
 import os
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 
 
 def shuffle_file(filename):

@@ -10,7 +10,7 @@ from ..callbacks import PeriodicCallback, OnceCallback, ScheduledCallback
 from ..ops.train_ops import process_gradients
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 
 
 class Trainer(object):

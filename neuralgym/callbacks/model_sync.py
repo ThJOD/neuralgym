@@ -8,7 +8,7 @@ from . import PeriodicCallback, CallbackLoc
 from ..utils.logger import callback_log
 
 
-logger = logging.getLogger()
+logger = logging.getLogger('neuralgym')
 
 
 class ModelSync(PeriodicCallback):
