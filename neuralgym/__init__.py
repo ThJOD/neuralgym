@@ -49,10 +49,10 @@ LOGGING_CONFIG = dict(
             'formatter': 'ff',
             'level': logging.DEBUG}
         },
-    root={
-        'handlers': ['h', 'fh'],
-        'level': logging.DEBUG,
-        },
+    # root={
+    #     'handlers': ['h', 'fh'],
+    #     'level': logging.DEBUG,
+    #     },
     loggers={ 
         'neuralgym': { 
             'handlers': ['h', 'fh'],
